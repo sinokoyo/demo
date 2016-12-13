@@ -1,0 +1,29 @@
+{
+  "name": "sinokoyo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sinokoyo@github.com/sinokoyo/demo.git"
+  },
+  "keywords": [],
+  "author": "sinokoyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sinokoyo/demo/issues"
+  },
+  "homepage": "https://github.com/sinokoyo/demo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-help": "^1.6.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "require-dir": "^0.3.1"
+  }
+}

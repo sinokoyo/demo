@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "jQuery": true,
+    "$": true
+  },
+  "rules": {
+    "no-redeclare": [
+      "error",
+      {
+        "builtinGlobals": false
+      }
+    ]
+  }
+}
