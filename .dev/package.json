@@ -20,9 +20,13 @@
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.8",
     "gulp-help": "^1.6.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-pleeease": "^2.0.2",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
     "gulp-watch": "^4.3.11",
     "require-dir": "^0.3.1"
   }
