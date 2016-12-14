@@ -5,28 +5,29 @@
 
 'use strict';
 
-const gulp	= require('gulp');
-const $			= require('gulp-load-plugins')({
-	pattern: ['gulp-', 'nib']
+const gulp = require('gulp');
+const path = require('path');
+const $    = require('gulp-load-plugins')({
+	pattern: ['gulp-*', 'nib']
 });
 
 // 設定ファイルからのパス読み出し
-const conf = require('./config');
-const paths = conf.paths;
+const paths = require('./config').paths;
 
 // -------------------- //
 // Compile Sass/SCSS
 // -------------------- //
 gulp.task('compile:styles', false, () => {
+	console.log('compile:styles');
 	return gulp.src(
-		[path.join(paths.src, 'style/**/*.+(sass|scss)')]
+		[path.join(paths.src, 'sass/**/*.+(sass|scss)')]
 	)
 	.pipe($.plumber())
 	.pipe($.sass())
 	.pipe($.csscomb())
 	.pipe($.pleeease(
 		{
-			autoprefixer: {browsers: ['chrome > 0%']},
+			autoprefixer: {browsers: ['last 2 versions']},
 			mqpacker: true,
 			minifier: true,
 		}

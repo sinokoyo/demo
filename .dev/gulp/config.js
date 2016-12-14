@@ -7,8 +7,8 @@
 
 module.exports = {
 	paths:{
-		src    : 'src',
-		dist   : 'dst',
+		src    : './',
+		dst    : '../',
 		serve  : '.tmp/serve',
 		build  : '',
 		release: 'release'
