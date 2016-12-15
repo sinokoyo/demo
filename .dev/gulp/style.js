@@ -17,7 +17,7 @@ const paths = require('./config').paths;
 // -------------------- //
 // Compile Sass/SCSS
 // -------------------- //
-gulp.task('compile:styles', false, () => {
+gulp.task('compile:styles', () => {
 	console.log('compile:styles');
 	return gulp.src(
 		[path.join(paths.src, 'sass/**/*.+(sass|scss)')]
@@ -35,7 +35,6 @@ gulp.task('compile:styles', false, () => {
 	.pipe($.sourcemaps.write())
 	.pipe(gulp.dest(paths.dst));
 });
-
 
 
 
