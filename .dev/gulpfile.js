@@ -4,7 +4,7 @@
  */
 
 'use strict';
-require('require-dir')('./gulp');
-const gulp = require('gulp-help')(require('gulp'));
 
-//[EOF]
+require('require-dir')('./gulp');
+const gulp = require('gulp');
+

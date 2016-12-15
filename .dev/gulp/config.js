@@ -9,7 +9,6 @@ module.exports = {
 	paths:{
 		src    : './',
 		dst    : '../',
-		serve  : '.tmp/serve',
 		build  : '',
 		release: 'release'
 	},
